@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+    body{
+      font-size: 16px;
+      font-family: 'Karla', sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      font-weight: 700;
+      background-color:hsl(218, 22%, 67%);
+      
+    }
+    .colorGrayishBlue{
+      color:hsl(218, 22%, 67%);
+    }
+    .colorCyan{
+      color: hsl(179, 62%, 43%);
+    }
+    .colorBrightYellow{
+      color: hsl(71, 73%, 54%);
+    }
+    .colorLightGrey{
+      color: hsl(204, 43%, 93%);
+    }
+    .colorDarkWhite{
+      color: rgb(235, 230, 230);
+    }
+
+    /* 
+    background color
+     */
+    .bgcolorCyan{
+      background-color: hsl(179, 62%, 43%);
+    }
+    .bgcolorBrightYellow{
+      background-color: hsl(71, 73%, 54%);
+    }
+    .bgcolorLightCyan{
+      background-color: hsl(179, 49%, 50%);
+    }
+
+    main{
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+    .increaseLineHeight{
+      line-height: 1.7;
+      font-weight: 400;
+    }
+    .row{
+      padding: 12px;
+      padding-left: 18px;
+    }
+    .row:nth-child(1){
+      
+      background-color: white;
+    }
+    .row:nth-child(2){
+      padding-bottom: 25px;
+    }
+    .bigFont{
+      font-size: 26px;
+    }
+.fontWeight400{
+  font-weight: 400;
+}
+    .buttonSignUp{
+      color: white;
+      border: none;
+      width: 90%;
+      height: 40px;
+      border-radius: 6px;
+      /* transform: translate(10%, 10px); */
+    }
+    .buttonSignUp:hover{
+      background-color: hsl(71, 71%, 46%);
+    }
+    footer{
+      text-align: center;
+      flex: 1 0 100%;
+    }
+    @media only screen and (min-width: 720px) {
+      main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70%;
+      }
+      .row{
+        padding-left: 30px;
+      }
+      .row:nth-child(1){
+        min-width: 80%;
+        min-height: 280px;
+      }
+      .row:nth-child(2){
+        flex: 1 1 100px;
+        min-height: 260px;
+      }
+      .row:nth-child(3){
+        flex: 1 2 100px;
+        min-height: 260px;
+      }
+      .buttonSignUp{
+        width: 100%;
+      }
+    }
+    @media only screen and (min-width: 1020px) {
+      .row{
+        padding-top: 30px;
+        padding-left: 60px;
+      }
+      .row:nth-child(1){
+        min-height: 270px;
+      }
+      .row:nth-child(2){
+        min-height: 250px;
+      }
+      .row:nth-child(3){
+        min-height: 250px;
+      }
+      .buttonSignUp{
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+
+  <div class="row colorGrayishBlue">
+  <h2 class="colorCyan"> Join our community</h2>
+
+  <h3 class="colorBrightYellow">30-day, hassle-free money back guarantee</h3>
+<p class="colorGrayishBlue increaseLineHeight">
+  Gain access to our full library of tutorials along with expert code reviews. 
+  Perfect for any developers who are serious about honing their skills.
+</p>
+</div>
+
+<div class="row colorLightGrey bgcolorCyan">
+  <h3> Monthly Subscription</h3>
+
+ <p class="colorDarkWhite"> <span class="bigFont colorLightGrey">&dollar;29  </span> per month</p>
+
+  <p class="colorDarkWhite"> Full access for less than &dollar;1 a day</p>
+
+  <button class="bgcolorBrightYellow buttonSignUp"> Sign Up </button>
+</div>
+
+<div class="row colorLightGrey bgcolorLightCyan">
+  <h3> Why Us</h3>
+<p class="colorDarkWhite fontWeight400">
+  Tutorials by industry experts <br/>
+  Peer &amp; expert code review<br/>
+  Coding exercises<br/>
+  Access to our GitHub repos<br/>
+  Community forum<br/>
+  Flashcard decks<br/>
+  New videos every week<br/>
+</p>
+</div>
+<footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jitesh Kumar</a>.
+  </p>
+</footer>
+</main>
+
+
+
+</body>
+</html>
