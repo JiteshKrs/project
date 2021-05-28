@@ -12,14 +12,17 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    
+    *{
+      box-sizing: border-box;
+      /* margin: 0; */
+      /* padding: 0; */
+    }
     body{
       font-size: 16px;
       font-family: 'Karla', sans-serif;
-      box-sizing: border-box;
-      margin: 0;
+      /* box-sizing: border-box; */
       font-weight: 700;
-      background-color:hsl(218, 22%, 67%);
+      background-color:hsl(0, 0%, 95%);
       
     }
     .colorGrayishBlue{
@@ -52,11 +55,14 @@
     }
 
     main{
+      border: 1px solid transparent;
       width: 80%;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      margin-top: 40px;
+      margin: 5rem auto 4rem auto;
+      box-shadow: 5px 5px 2px #d3d3d3;
+      border-radius: 0.7rem;
     }
     .increaseLineHeight{
       line-height: 1.7;
@@ -67,14 +73,19 @@
       padding-left: 18px;
     }
     .row:nth-child(1){
-      
+      border-top-left-radius: 0.7rem;
+      border-top-right-radius: 0.7rem;
       background-color: white;
     }
     .row:nth-child(2){
       padding-bottom: 25px;
     }
+    .row:nth-child(3){
+      border-bottom-right-radius: 0.7rem;
+      border-bottom-left-radius: 0.7rem;
+    }
     .bigFont{
-      font-size: 26px;
+      font-size: 31px;
     }
 .fontWeight400{
   font-weight: 400;
@@ -99,27 +110,39 @@
         flex-direction: row;
         flex-wrap: wrap;
         width: 70%;
+        margin-bottom: 2px;
       }
       .row{
-        padding-left: 30px;
+        padding-left: 20px;
       }
       .row:nth-child(1){
         min-width: 80%;
         min-height: 280px;
+        
       }
       .row:nth-child(2){
         flex: 1 1 100px;
         min-height: 260px;
+        border-bottom-left-radius: 0.7rem;
       }
       .row:nth-child(3){
         flex: 1 2 100px;
         min-height: 260px;
+        border-bottom-left-radius: 0rem;
       }
       .buttonSignUp{
         width: 100%;
       }
     }
-    @media only screen and (min-width: 1020px) {
+    @media only screen and (min-width: 964px){
+      main{
+        width: 60%;
+      }
+    }
+    @media only screen and (min-width: 1116px) {
+      main{
+        width: 60%;
+      }
       .row{
         padding-top: 30px;
         padding-left: 60px;
@@ -137,6 +160,11 @@
         width: 80%;
       }
     }
+    @media only screen and (min-width:1258px){
+      main{
+        width: 50%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -144,9 +172,9 @@
   <main>
 
   <div class="row colorGrayishBlue">
-  <h2 class="colorCyan"> Join our community</h2>
+  <h1 class="colorCyan"> Join our community</h1>
 
-  <h3 class="colorBrightYellow">30-day, hassle-free money back guarantee</h3>
+  <h2 class="colorBrightYellow">30-day, hassle-free money back guarantee</h2>
 <p class="colorGrayishBlue increaseLineHeight">
   Gain access to our full library of tutorials along with expert code reviews. 
   Perfect for any developers who are serious about honing their skills.
@@ -154,7 +182,7 @@
 </div>
 
 <div class="row colorLightGrey bgcolorCyan">
-  <h3> Monthly Subscription</h3>
+  <h2> Monthly Subscription</h2>
 
  <p class="colorDarkWhite"> <span class="bigFont colorLightGrey">&dollar;29  </span> per month</p>
 
@@ -164,7 +192,7 @@
 </div>
 
 <div class="row colorLightGrey bgcolorLightCyan">
-  <h3> Why Us</h3>
+  <h2> Why Us</h2>
 <p class="colorDarkWhite fontWeight400">
   Tutorials by industry experts <br/>
   Peer &amp; expert code review<br/>
@@ -175,13 +203,14 @@
   New videos every week<br/>
 </p>
 </div>
+</main>
 <footer>
   <p class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Jitesh Kumar</a>.
   </p>
 </footer>
-</main>
+
 
 
 
