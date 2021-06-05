@@ -1,0 +1,133 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+.textUpper {
+    text-transform: uppercase;
+}
+
+.bgColorOrange {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.bgColorDarkCyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.bgColorLightCyan {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.card {
+    line-height: 3.5em;
+}
+
+.cardBody {
+    padding: 40px;
+}
+
+.pFontSize {
+    font-weight: 100;
+    color: hsla(0, 0%, 100%, 0.562);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.buttonStyled {
+    border: none;
+    border-radius: 1.3em;
+    /* width: 45%; */
+    width: 100px;
+    height: 2.7em;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.buttonStyled:hover {
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.buttonOrange {
+    color: hsl(31, 77%, 52%);
+}
+
+.buttonDarkCyan {
+    color: hsl(184, 100%, 22%);
+}
+
+.buttonLightCyan {
+    color: hsl(179, 100%, 13%);
+}
+
+#borderRadiusOrange {
+    border-top-left-radius: 1.2em;
+    border-top-right-radius: 1.2em;
+}
+
+#borderRadiusLightCyan {
+    border-bottom-left-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+}
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+    color: black;
+    margin-bottom: 2%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* 
+******
+Media Query
+******
+ */
+
+@media only screen and (min-width: 700px) {
+    .container {
+        flex-direction: row;
+        /* justify-content: unset; */
+        margin-top: 10%;
+        background-color: red;
+        
+    }
+    .card{}
+    #borderRadiusOrange {
+        border-top-left-radius: 1.2em;
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 1.2em;
+    }
+
+    #borderRadiusLightCyan {
+        border-bottom-left-radius: unset;
+        border-bottom-right-radius: 1.2em;
+        border-top-right-radius: 1.2em;
+    }
+    .buttonStyled{
+        width: 150px;
+    }
+}
