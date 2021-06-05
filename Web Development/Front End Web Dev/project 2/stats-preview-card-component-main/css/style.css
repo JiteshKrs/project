@@ -152,7 +152,7 @@ img{
     margin-top: 0px;
     padding-top: 3%;
   }
-  span{
+  div{
     order: 2;
     flex:1 1 50%;
   }
