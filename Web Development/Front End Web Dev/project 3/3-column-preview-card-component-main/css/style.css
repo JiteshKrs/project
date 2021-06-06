@@ -80,13 +80,13 @@ font-family: 'Lexend Deca', sans-serif; */
 }
 
 #borderRadiusOrange {
-    border-top-left-radius: 1.2em;
-    border-top-right-radius: 1.2em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
 #borderRadiusLightCyan {
-    border-bottom-left-radius: 1.2em;
-    border-bottom-right-radius: 1.2em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 .attribution {
@@ -110,24 +110,42 @@ Media Query
 @media only screen and (min-width: 700px) {
     .container {
         flex-direction: row;
-        /* justify-content: unset; */
         margin-top: 10%;
-        background-color: red;
-        
+        max-width: 85%;
     }
-    .card{}
+    .cardBody{
+        height: 100%;
+        /* padding: 30px; */
+    }
     #borderRadiusOrange {
-        border-top-left-radius: 1.2em;
+        border-top-left-radius: 1em;
         border-top-right-radius: unset;
-        border-bottom-left-radius: 1.2em;
+        border-bottom-left-radius: 1em;
     }
 
     #borderRadiusLightCyan {
         border-bottom-left-radius: unset;
-        border-bottom-right-radius: 1.2em;
-        border-top-right-radius: 1.2em;
+        border-bottom-right-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+    .pFontSize{
+        margin-bottom: 10px;
+        font-size: 13px;
     }
     .buttonStyled{
-        width: 150px;
+        width: 130px;
+        height: 40px;
+        margin-top: 3.9em;
+        /* margin-bottom: 5px; */
+    }
+}
+@media only screen and (min-width: 982px){
+    .container{
+        max-width: 77%;
+    }
+}
+@media only screen and (min-width: 1232px){
+    .container{
+        max-width: 70%;
     }
 }
