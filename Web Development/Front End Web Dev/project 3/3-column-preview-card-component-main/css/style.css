@@ -40,6 +40,10 @@ font-family: 'Lexend Deca', sans-serif; */
     line-height: 3.5em;
 }
 
+img {
+    max-width: 5rem;
+}
+
 .cardBody {
     padding: 40px;
 }
@@ -55,8 +59,8 @@ font-family: 'Lexend Deca', sans-serif; */
 .buttonStyled {
     border: none;
     border-radius: 1.3em;
-    /* width: 45%; */
-    width: 100px;
+    margin-top: 5%;
+    width: 120px;
     height: 2.7em;
     font-family: 'Lexend Deca', sans-serif;
 }
@@ -112,11 +116,18 @@ Media Query
         flex-direction: row;
         margin-top: 10%;
         max-width: 85%;
+        height: 60vh;
     }
-    .cardBody{
+
+    .cardBody {
         height: 100%;
         /* padding: 30px; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
+
     #borderRadiusOrange {
         border-top-left-radius: 1em;
         border-top-right-radius: unset;
@@ -128,24 +139,28 @@ Media Query
         border-bottom-right-radius: 1em;
         border-top-right-radius: 1em;
     }
-    .pFontSize{
+
+    .pFontSize {
         margin-bottom: 10px;
         font-size: 13px;
     }
-    .buttonStyled{
+
+    .buttonStyled {
         width: 130px;
         height: 40px;
         margin-top: 3.9em;
         /* margin-bottom: 5px; */
     }
 }
-@media only screen and (min-width: 982px){
-    .container{
+
+@media only screen and (min-width: 982px) {
+    .container {
         max-width: 77%;
     }
 }
-@media only screen and (min-width: 1232px){
-    .container{
+
+@media only screen and (min-width: 1232px) {
+    .container {
         max-width: 70%;
     }
 }
