@@ -24,9 +24,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    margin-top: 10%;
-    max-width: 50%;
+    margin-left: 0px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -36,61 +35,52 @@ body {
     border-bottom-right-radius: 1.2em;
     border-top-left-radius: 1.2rem;
     border-top-right-radius: 1.2rem;
-
-    height: 55vh;
-    display: flex;
-    flex-direction: column;
+    margin-top: 30%;
+    margin-bottom: 30px;
     position: relative;
 }
 
 .pictureStyle {
-    border-top-left-radius: 50%;
-}
-.pictureStyle img{
     border-top-left-radius: 1.2rem;
     border-top-right-radius: 1.2rem;
-
+    width: 100%;
+    display: block;
 }
 
 .profilePic {
-    position: absolute;
-    top: 90px;
-    left: 35%;
-}
-.profilePic img{
+    display: block;
     border: 4px solid white;
     border-radius: 50%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    transform: translateY(-55px);
 }
 
-.cardBody {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.marginTop{
-    margin-top: 80px;
+.marginTop {
+    margin-top: 70px;
+    text-align: center;
 }
 
-.lightHeading{
+.lightHeading {
     font-weight: 400;
     color: var(--dark_gray);
-    vertical-align: baseline;
-    margin-left: 10px;
 }
 
 .lightText {
     font-weight: 400;
     color: var(--dark_gray);
-    /* font-size: 15px; */
     margin-top: 10px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 hr {
     width: 100%;
     color: var(--dark_gray);
-    /* background-color: var(--dark_gray); */
     height: 1px;
     opacity: 0.3;
 }
@@ -98,12 +88,13 @@ hr {
 .flexRow {
     display: flex;
     justify-content: space-around;
+
 }
 
 .cardInfo {
-    width: 100%;
     margin-top: 32px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .cardInfo p {
@@ -114,10 +105,22 @@ hr {
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 13px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 680px){
+.card{
+    margin-top: 18%;
+}
+}
+@media only screen and (min-width:1000px){
+    .card{
+        margin-top: 10%;
+    }
 }
