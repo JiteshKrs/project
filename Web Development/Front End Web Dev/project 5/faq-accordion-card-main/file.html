@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var x = 10;
+        // var output = (function(){
+        //     delete x;
+        //     return x;
+        // })();
+        // console.log(output);
+        var series = function(n)
+        {
+            if(n==1){
+                return [0,1];
+            }else{
+                var s= series(n-1);
+                s.push(s[s.length -1] + s[s.length - 2]);
+                return s;
+            }
+        };
+        console.log(series(8));
+    </script>
+</body>
+</html>

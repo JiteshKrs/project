@@ -1,0 +1,78 @@
+$txt-color: #480074;
+
+.container{
+    color: $txt-color;
+    margin-top: 40px;
+    h1{
+        font-size: 50px;
+        padding: 10px;
+        transform: translate(0,50%);
+        margin-left: 70px;
+        margin-bottom: 70px;
+    }
+}
+
+.skillContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.item1{
+    width: 400px;
+    min-height: 450px;
+    border: $txt-color solid 4px;
+    border-radius: 15px;  
+    padding: 10px;  
+    margin: 25px;
+    h2{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+}
+
+.flexIcons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.iconContainer{
+    display: inline-block;
+    width: 90px;
+    padding: 4px;
+    margin: 2px;
+}
+
+.bootStr{
+    width: 70px;
+}
+
+@media only screen and (max-width: 900px){
+    .container{
+        margin-top: 40px;
+        h1{
+            font-size: 40px;
+            padding: 10px;
+            margin-left: unset;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        h1{
+            font-size: 32px;
+        }
+        h2{
+            font-size: 25px;
+        }
+    }
+}

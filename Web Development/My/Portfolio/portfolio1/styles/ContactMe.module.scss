@@ -1,0 +1,92 @@
+$base-color: #480074;
+$txt-color: #FFFFFF;
+.container{
+    margin: 15px;
+    margin-bottom: 5em;
+    h1{
+        color: $base-color;
+        margin-left: 40px;
+        margin-bottom: 60px;
+        margin-top: -30px;
+        padding: 10px;
+        font-size: 50px;
+        transform: translate(0,37%);
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        label{
+            font-size: 1.5em;
+        }
+        ::placeholder{
+            color: $base-color;
+        }
+        .inputBox{
+            border-color: $base-color;
+            border-radius: 5px;
+            outline: none;
+            width: 50vw;
+            height: 3.2em;
+            margin: 1.5em;
+        }
+        textarea{
+            border: 2px solid $base-color;
+        }
+    }
+    button{
+        background-color: $txt-color;
+        width: 5.7em;
+        height: 35px;
+        border-radius: 5px;
+        color: $base-color;
+        cursor: pointer;
+        margin-top: 1em;
+        font-size: 1.5em;
+        outline: none;
+    }
+    button:hover{
+        color: $txt-color;
+        background-color: $base-color;
+        // font-weight: bold;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .container{
+        h1{
+            text-align: center;
+            font-size: 40px;
+            margin-left: unset;
+            margin-bottom: unset;
+            transform: translate(0,3%);
+        } 
+        form{
+            .inputBox{
+                width: 62%;
+            }
+        }
+        button{
+            font-size: 17px;
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        h1{
+            font-size: 32px;
+        }
+        form{
+            .inputBox{
+                width: 80%;
+            }
+        }
+        button{
+            font-size: 18px;
+        }
+
+    }
+}

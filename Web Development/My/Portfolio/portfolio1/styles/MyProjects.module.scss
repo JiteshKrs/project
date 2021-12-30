@@ -1,0 +1,97 @@
+$base-color: #480074;
+$txt-color: #480074;
+.container{
+    color: $base-color;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projectContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.project{
+    width: 400px;
+    height: auto;
+    border: $base-color solid 4px;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+    margin:25px;
+    ul{
+        font-size: 20px;
+        padding: 10px;
+        list-style-type: disc;
+        padding-left: 13%;
+        li{
+            text-align: left;
+        }
+    }
+}
+
+.projectBox{
+    h2{
+        font-size: 30px;
+    }
+}
+
+.imgContainer{
+    padding: 0;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+.btn{
+    width: 6em;
+    height: 2em;
+    background-color: transparent;
+    color: $txt-color;
+    border-radius: 10px;
+    border: $txt-color solid 2px;
+    font-size: 20px;
+    margin: 8px;
+    margin-bottom: 40px;
+    outline: none;
+    &:hover{
+        background-color: $txt-color;
+        opacity: 0.9;
+        color: white;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width:347px){
+    .container{
+        .btn{
+            font-size: 14px;
+        }
+        .project{
+            width: inherit;
+        }
+        ul{
+            
+            font-size: 18px;
+        }
+        .imgContainer{
+            
+        }
+    }
+}
+@media only screen and (max-width: 326px){
+    .imgContainer{
+        display: none;
+    }
+    .projectBox{
+        margin-top: 5px;
+        h2{
+            font-size: 22px !important; 
+        }
+    }
+}
