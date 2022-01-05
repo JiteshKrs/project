@@ -1,6 +1,8 @@
 import Image from "next/image";
-
 import myprojectsStyle from "../styles/MyProjects.module.scss";
+import davidchusvg from ".//../public/images/my-projects/davidChu.png";
+import todolist from ".//../public/images/my-projects/basicTodoList.png"
+import portfolio from ".//../public/images/my-projects/portfolio1.png"
 
 const MyProjects = () => {
   return (
@@ -13,7 +15,7 @@ const MyProjects = () => {
         <section className={myprojectsStyle.project}>
           <div className={myprojectsStyle.imgContainer}>
             <Image
-              src="/../public/images/my-projects/davidChu.png"
+              src{...davidchusvg}
               alt="PR1"
               width="100%"
               height="100%"
@@ -37,7 +39,7 @@ const MyProjects = () => {
         <section className={myprojectsStyle.project}>
           <div className={myprojectsStyle.imgContainer}>
             <Image
-              src="/../public/images/my-projects/basicTodoList.png"
+              src{...todolist}
               alt="PR2"
               width="100%"
               height="100%"
@@ -61,7 +63,7 @@ const MyProjects = () => {
         <section className={myprojectsStyle.project}>
           <div className={myprojectsStyle.imgContainer}>
             <Image
-              src="/../public/images/my-projects/portfolio1.png"
+              src{...portfolio}
               alt="PR3"
               width="100%"
               height="100%"

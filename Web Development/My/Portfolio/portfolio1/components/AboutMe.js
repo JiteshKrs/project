@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Img from "next/image";
+import abt from ".//../public/images/about-me/about.png";
 
 import aboutmeStyles from "../styles/AboutMe.module.scss";
 
@@ -8,8 +9,8 @@ const AboutMe = () => {
       <h1>About Me</h1>
       <section className={aboutmeStyles.aboutContainer}>
         <span className={aboutmeStyles.imgContainer}>
-          <Image
-            src="/../public/images/about-me/about.png"
+          <Img
+            src{...abt}
             alt="About me"
             width="100%"
             height="100%"
